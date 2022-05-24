@@ -6,8 +6,7 @@
 	<file name="$boarddir/index.php">
 		<!-- Make sure we have composer autoloading -->
 		<operation>
-			<search position="before"><![CDATA[
-		error_reporting(E_ALL);]]></search>
+			<search position="before"><![CDATA[error_reporting(E_ALL);]]></search>
 			<add><![CDATA[
 		/////////////////////////
         include __DIR__ . '/../vendor/autoload.php';
