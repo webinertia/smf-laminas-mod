@@ -2,7 +2,7 @@
 <!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
     <id>Tyrsson:LmnsFrmwrk</id>
-	<version>1.0</version>
+	<version>1.2</version>
 	<file name="$boarddir/index.php">
 		<!-- Make sure we have composer autoloading -->
 		<operation>

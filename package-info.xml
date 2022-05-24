@@ -3,7 +3,7 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>Tyrsson:LmnsFrmwrk</id>
 	<name>Laminas Framework</name>
-	<version>1.0</version>
+	<version>1.2</version>
 	<type>modification</type>
 	<install for="2.1.*">
 		<!-- source files -->
