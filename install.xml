@@ -7,10 +7,9 @@
 		<!-- Make sure we have composer autoloading -->
 		<operation>
 			<search position="before"><![CDATA[error_reporting(E_ALL);]]></search>
-			<add><![CDATA[
-		/////////////////////////
-        include __DIR__ . '/../vendor/autoload.php';
-        /////////////////////////]]></add>
+			<add><![CDATA[/////////////////////////
+include __DIR__ . '/../vendor/autoload.php';
+/////////////////////////]]></add>
 		</operation>
 	</file>
 </modification>
