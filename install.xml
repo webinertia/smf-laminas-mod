@@ -6,7 +6,7 @@
 	<file name="$boarddir/index.php">
 		<!-- Make sure we have composer autoloading -->
 		<operation>
-			<search position="after"><![CDATA[
+			<search position="before"><![CDATA[
 		error_reporting(E_ALL);]]></search>
 			<add><![CDATA[
 		/////////////////////////

@@ -7,17 +7,17 @@
 	<type>modification</type>
 	<install for="2.1.*">
 		<!-- source files -->
-		<require-file name="Sub-ServiceManager.php" destination="$sourcedir" />
+		<require-file name="Subs-ServiceManager.php" destination="$sourcedir" />
 		<modification format="xml" type="file">install.xml</modification>
 		<!-- All the hooks -->
-		<hook hook="integrate_pre_include" file="$sourcedir/Sub-ServiceManager.php" />
-		<hook hook="integrate_pre_load" function="buildServiceManager" file="$sourcedir/Sub-ServiceManager.php" />
+		<hook hook="integrate_pre_include" file="$sourcedir/Subs-ServiceManager.php" />
+		<hook hook="integrate_pre_load" function="buildServiceManager" file="$sourcedir/Subs-ServiceManager.php" />
 	</install>
 	<uninstall for="2.1.*">
 		<!-- All the hooks, removed -->
-        <hook reverse="true" hook="integrate_pre_include" file="$sourcedir/Sub-ServiceManager.php" />
-		<hook reverse="true" hook="integrate_pre_load" function="buildServiceManager" file="$sourcedir/Sub-ServiceManager.php" />
+        <hook reverse="true" hook="integrate_pre_include" file="$sourcedir/Subs-ServiceManager.php" />
+		<hook reverse="true" hook="integrate_pre_load" function="buildServiceManager" file="$sourcedir/Subs-ServiceManager.php" />
 		<!-- source files, removed -->
-		<remove-file name="$sourcedir/Sub-ServiceManager.php" />
+		<remove-file name="$sourcedir/Subs-ServiceManager.php" />
 	</uninstall>
 </package-info>
