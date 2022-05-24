@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+    <id>Tyrsson:LmnsFrmwrk</id>
+	<version>1.0</version>
+	<file name="$boarddir/index.php">
+		<!-- Make sure we have composer autoloading -->
+		<operation>
+			<search position="after"><![CDATA[
+		error_reporting(E_ALL);]]></search>
+			<add><![CDATA[
+		/////////////////////////
+        include __DIR__ . '/../vendor/autoload.php';
+        /////////////////////////]]></add>
+		</operation>
+	</file>
+</modification>

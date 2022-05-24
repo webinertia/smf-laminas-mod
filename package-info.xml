@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Tyrsson:LmnsFrmwrk</id>
+	<name>Laminas Framework</name>
+	<version>1.0</version>
+	<type>modification</type>
+	<install for="2.1.*">
+		<!-- source files -->
+		<require-file name="Sub-ServiceManager.php" destination="$sourcedir" />
+		<modification format="xml" type="file">install.xml</modification>
+		<!-- All the hooks -->
+		<hook hook="integrate_pre_include" file="$sourcedir/Sub-ServiceManager.php" />
+		<hook hook="integrate_pre_load" function="buildServiceManager" file="$sourcedir/Sub-ServiceManager.php" />
+	</install>
+	<uninstall for="2.1.*">
+		<!-- All the hooks, removed -->
+        <hook reverse="true" hook="integrate_pre_include" file="$sourcedir/Sub-ServiceManager.php" />
+		<hook reverse="true" hook="integrate_pre_load" function="buildServiceManager" file="$sourcedir/Sub-ServiceManager.php" />
+		<!-- source files, removed -->
+		<remove-file name="$sourcedir/Sub-ServiceManager.php" />
+	</uninstall>
+</package-info>
